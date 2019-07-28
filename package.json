@@ -1,10 +1,13 @@
 {
   "name": "hash-store",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "A micro library for saving data in the hashStore.",
-  "main": "index.js",
+  "main": "build/hash-store.min.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm test && webpack",
+    "test": "jest",
+    "prepare": "npm run build",
+    "publish": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -21,5 +24,30 @@
   "bugs": {
     "url": "https://github.com/ssokurenko/hash-store/issues"
   },
-  "homepage": "https://github.com/ssokurenko/hash-store#readme"
+  "homepage": "https://github.com/ssokurenko/hash-store#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "babel-preset-minify": "^0.5.0",
+    "css-loader": "^3.0.0",
+    "file-loader": "^4.0.0",
+    "jest": "^24.8.0",
+    "prettier": "^1.18.2",
+    "prettier-webpack-plugin": "^1.2.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^2.0.0",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4"
+  },
+  "dependencies": {},
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/scripts/testMock.js",
+      "\\.(css|less)$": "<rootDir>/scripts/testMock.js"
+    }
+  }
 }
