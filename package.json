@@ -1,7 +1,7 @@
 {
   "name": "hash-store",
-  "version": "0.0.3",
-  "description": "A micro library to save data in the hashStore.",
+  "version": "0.0.4",
+  "description": "A micro library for saving data in the hashStore.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

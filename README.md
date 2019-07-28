@@ -1,3 +1,3 @@
 # hashStore
 
-A micro library to save data in the hashStore.
+A micro library for saving data in the hashStore.
