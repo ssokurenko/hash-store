@@ -1,0 +1,25 @@
+{
+  "name": "hash-store",
+  "version": "0.0.3",
+  "description": "A micro library to save data in the hashStore.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssokurenko/hash-store.git"
+  },
+  "keywords": [
+    "npm",
+    "web",
+    "storage",
+    "spa"
+  ],
+  "author": "Sergey Sokurenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ssokurenko/hash-store/issues"
+  },
+  "homepage": "https://github.com/ssokurenko/hash-store#readme"
+}
