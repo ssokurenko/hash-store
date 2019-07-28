@@ -1,10 +1,25 @@
 import HashStore from '../src/index';
+const mockData = [
+  {
+    id: 0,
+    title: `Don't worry`
+  },
+  {
+    id: 1,
+    title: 'Be happy'
+  }
+];
 
-test('Runs without crashing', () => {
-  new HashStore();
+test('Runs instaciation crashing', () => {
+  const hashStore = new HashStore;
 });
 
-test('Runs checkHealth without crashing', () => {
+test('Runs setItem without crashing', () => {
   const hashStore = new HashStore();
-  hashStore.checkHealth();
+  hashStore.setItem('test', mockData);
+});
+
+test('Runs getItem without crashing', () => {
+  const hashStore = new HashStore();
+  hashStore.getItem('test');
 });

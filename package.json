@@ -1,13 +1,14 @@
 {
   "name": "hash-store",
-  "version": "0.0.7",
+  "version": "0.1.1",
   "description": "A micro library for saving data in the hashStore.",
   "main": "build/hash-store.min.js",
   "scripts": {
     "build": "npm test && webpack",
     "test": "jest",
     "prepare": "npm run build",
-    "publish": "npm run build && npm publish"
+    "publish:npm": "npm run build && npm publish",
+    "serve": "live-server --open=dev --watch=build --port=2019"
   },
   "repository": {
     "type": "git",
@@ -43,7 +44,9 @@
     "webpack": "^4.34.0",
     "webpack-cli": "^3.3.4"
   },
-  "dependencies": {},
+  "dependencies": {
+    "live-server": "^1.2.1"
+  },
   "jest": {
     "moduleNameMapper": {
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/scripts/testMock.js",

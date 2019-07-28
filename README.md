@@ -13,5 +13,5 @@ A micro library for saving data in the hashStore.
 ### Build
 ```npm run build```
 
-### Publish
-```npm run publish```
+### Publish to NPM
+```npm run publish:npm```
