@@ -23,3 +23,13 @@ test('Runs getItem without crashing', () => {
   const hashStore = new HashStore();
   hashStore.getItem('test');
 });
+
+test('Runs removeItem without crashing', () => {
+  const hashStore = new HashStore();
+  hashStore.removeItem('test');
+});
+
+test('Runs clear without crashing', () => {
+  const hashStore = new HashStore();
+  hashStore.clear();
+});

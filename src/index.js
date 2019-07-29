@@ -48,13 +48,28 @@ class HashStore {
   }
 
   getItem(key) {
+    if (!key) {
+      return;
+    }
     const store = this._getStore();
     return store[key];
   }
 
-  removeItem() {}
+  removeItem(key) {
+    if (key && this._isLocationAvailable()) {
+      const store = this._getStore();
+      if (store[key]) {
+        delete store[key];
+        this._updateStore(store);
+      }
+    }
+  }
 
-  clear() {}
+  clear() {
+    if (this._isLocationAvailable()) {
+      this._updateStore({});
+    }
+  }
 }
 
 export default HashStore;

@@ -21,3 +21,15 @@ console.log(hashStore.getItem('tasks'));
 hashStore.setItem('tasks', data);
 
 console.log(hashStore.getItem('tasks'));
+
+hashStore.removeItem('tasks');
+
+console.log(hashStore.getItem('tasks'));
+
+hashStore.setItem('test', data);
+
+console.log(hashStore.getItem('test'));
+
+hashStore.clear();
+
+console.log(hashStore.getItem('test'));
