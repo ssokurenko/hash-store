@@ -23,19 +23,19 @@ Install the package and save as a dependency:
 # Usage
 
 The syntax for adding data item to the storage:
-```hashStorage.setItem('myCat', {data: 'string, number, array or an object'});```
+```hashStore.setItem('myCat', {data: 'string, number, array or an object'});```
 
-The syntax for reading the hashStorage item:
+The syntax for reading the hashStore item:
 
-```const cat = hashStorage.getItem('myCat');```
+```const cat = hashStore.getItem('myCat');```
 
-The syntax for removing the hashStorage item:
+The syntax for removing the hashStore item:
 
-```hashStorage.removeItem('myCat');```
+```hashStore.removeItem('myCat');```
 
-The syntax for removing all the hashStorage items:
+The syntax for removing all the hashStore items:
 
-```hashStorage.clear();```
+```hashStore.clear();```
 
 ## Development
 
