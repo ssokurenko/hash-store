@@ -2,11 +2,19 @@
 
 A micro library for saving data in the hashStore.
 
-## Install using NPM
+## Using NPM and ES6
 
-Install the package and save as a dependency:
+Install the package and save it as a dependency:
 
 ```npm install -s hash-store```
+
+Import it to your js file:
+
+```import * as HashStore from 'hash-store';```
+
+And instanciate the service:
+
+```const hashStore = new HashStore.default();```
 
 ## Adding the script referece directly to your html
 
