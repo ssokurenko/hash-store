@@ -2,6 +2,12 @@
 
 A micro library for saving data in the hashStore.
 
+It serializes an object into a string and keeps it at the URL hash fragment.
+
+# Usage examples
+
+- [https://type.fit](https://type.fit/#%7B%22text%22:%22This%20web%20app%20uses%20the%20HashStore%20library%20to%20store%20the%20app%20data%20at%20the%20url%20hash.%5CnTake%20a%20look%20at%20the%20address%20line.%22%7D)
+
 ## Using NPM and ES6
 
 Install the package and save it as a dependency:

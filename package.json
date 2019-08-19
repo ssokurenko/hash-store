@@ -1,6 +1,6 @@
 {
   "name": "hash-store",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A micro library for saving data in the hashStore.",
   "main": "build/hash-store.min.js",
   "scripts": {
